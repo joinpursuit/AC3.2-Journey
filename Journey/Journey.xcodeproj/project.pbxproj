@@ -12,6 +12,7 @@
 		1A752EFF1DD249C500A74B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752EFD1DD249C500A74B86 /* Main.storyboard */; };
 		1A752F011DD249C500A74B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F001DD249C500A74B86 /* Assets.xcassets */; };
 		1A752F041DD249C500A74B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */; };
+		70C239251DD24FC0004BCA1E /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C239241DD24FC0004BCA1E /* apiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1A752F001DD249C500A74B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A752F031DD249C500A74B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A752F051DD249C500A74B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C239241DD24FC0004BCA1E /* apiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1A752EF91DD249C500A74B86 /* AppDelegate.swift */,
+				70C239231DD24FA6004BCA1E /* Managers */,
 				1A752EFB1DD249C500A74B86 /* ViewController.swift */,
 				1A752EFD1DD249C500A74B86 /* Main.storyboard */,
 				1A752F001DD249C500A74B86 /* Assets.xcassets */,
@@ -62,6 +65,14 @@
 				1A752F051DD249C500A74B86 /* Info.plist */,
 			);
 			path = Journey;
+			sourceTree = "<group>";
+		};
+		70C239231DD24FA6004BCA1E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				70C239241DD24FC0004BCA1E /* apiManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				1A752EFC1DD249C500A74B86 /* ViewController.swift in Sources */,
 				1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */,
+				70C239251DD24FC0004BCA1E /* apiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				1A752F0A1DD249C500A74B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
