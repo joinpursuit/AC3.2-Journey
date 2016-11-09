@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let clientID = "3c1ba9eeaa4d45fa870a0748a63ab7e5"
-        let redirectURL = "https://oauth-test-spacedrabbit.herokuapp.com/callback/Journey"
+        let redirectURL = "https://oauth-test-spacedrabbit.herokuapp.com/callback/InstagramTest"
         // https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
         let url = URL(string: "https://api.instagram.com/oauth/authorize/?client_id=\(clientID)&redirect_uri=\(redirectURL)&response_type=code&scope=basic+public_content")!
         
@@ -48,8 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         urlRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         
         
-        let postData = NSMutableData(data: "client_id=f23241255a4847c7a6ec0f81b0c89c42".data(using: String.Encoding.utf8)!)
-        postData.append("&client_secret=1dca2a33cefa4b74a67e9dfff5646cec".data(using: String.Encoding.utf8)!)
+        let postData = NSMutableData(data: "client_id=3c1ba9eeaa4d45fa870a0748a63ab7e5".data(using: String.Encoding.utf8)!)
+        postData.append("&client_secret=b18d57f39dc048f1ae69e1ef47d1c1f7".data(using: String.Encoding.utf8)!)
         postData.append("&grant_type=authorization_code".data(using: String.Encoding.utf8)!)
         postData.append("&redirect_uri=https://oauth-test-spacedrabbit.herokuapp.com/callback/InstagramTest".data(using: String.Encoding.utf8)!)
         postData.append("&code=\(accessCode)".data(using: String.Encoding.utf8)!)
@@ -85,8 +85,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                     
                     print(unwrappedJson)
+                    if let accessToken = unwrappedJson["access_token"] {
+                        let accessTokenString = accessToken as! String
+                        AccessTokenManager.sharedInstance.accessToken = accessTokenString
+                        print(accessToken)
+                        NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "token")))
+                        
+                    }
                     // access: 10995181.f232412.e238502534ac4d6187ebc85e9527d9f4
                     print("Code retrieved")
+                    print(unwrappedJson["access_token"]!)
                 }
                 catch {
                     print("error parsing json on callback response: \(error)")
