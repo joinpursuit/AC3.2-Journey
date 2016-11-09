@@ -13,6 +13,7 @@ class YelpResultsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BusinessFactory.getBusinessResult()
     }
 
 
