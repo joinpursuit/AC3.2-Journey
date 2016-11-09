@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		1A5AC21F1DD3B50200A187A3 /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRequestManager.swift; path = Journey/ApiRequestManager.swift; sourceTree = "<group>"; };
 		1A5AC2201DD3B50200A187A3 /* Business Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Business Factory.swift"; path = "Journey/Business Factory.swift"; sourceTree = "<group>"; };
-		1A5AC2211DD3B50200A187A3 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Business.swift; path = Journey/Business.swift; sourceTree = "<group>"; };
+		1A5AC2211DD3B50200A187A3 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		1A752EF61DD249C500A74B86 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A752EF91DD249C500A74B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A752EFB1DD249C500A74B86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				1A5AC2201DD3B50200A187A3 /* Business Factory.swift */,
-				1A5AC2211DD3B50200A187A3 /* Business.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -116,6 +115,7 @@
 		70C239281DD28999004BCA1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AC2211DD3B50200A187A3 /* Business.swift */,
 				70C2392A1DD28C28004BCA1E /* Instagram.swift */,
 			);
 			name = Models;
