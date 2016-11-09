@@ -8,16 +8,6 @@
 
 import Foundation
 
-//
-//  APIManager.swift
-//  Journey
-//
-//  Created by Amber Spadafora on 11/5/16.
-//  Copyright © 2016 C4Q. All rights reserved.
-//
-
-import Foundation
-
 class ApiRequestManager {
     
     static let manager = ApiRequestManager()
@@ -43,9 +33,6 @@ class ApiRequestManager {
             }
             .resume()
     }
-    
-    
-    
 }
 
 
