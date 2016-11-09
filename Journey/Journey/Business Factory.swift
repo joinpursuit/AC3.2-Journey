@@ -50,27 +50,3 @@ class BusinessFactory {
         return business
     }
 }
-//MARK: - API Request Manager
-class APIRequestManager {
-    
-    static let manager: APIRequestManager = APIRequestManager()
-    private init() {}
-    
-    func makeBusiness(apiPoint: String, callback: @escaping ((Data?) -> Void)) {
-        
-        guard let url = URL(string: apiPoint) else { return }
-        
-        let session = URLSession.init(configuration: .default)
-        session.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
-            
-            if error != nil {
-                print("Error encountered: \(error)")
-            }
-            
-            guard let validData = data else { return }
-            callback(validData)
-        }
-        .resume()
-    }
-    
-}

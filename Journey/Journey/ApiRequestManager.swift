@@ -23,8 +23,6 @@ class ApiRequestManager {
     static let manager = ApiRequestManager()
     private init() {}
     
-    
-    
     func getData(apiUrl: String, callback: @escaping ((Data?) -> Void)) {
         
         guard let endPointUrl = URL(string: apiUrl) else { return }
