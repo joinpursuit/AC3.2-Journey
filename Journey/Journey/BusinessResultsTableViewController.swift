@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YelpResultsTableViewController: UITableViewController {
+class BusinessResultsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class YelpResultsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: YelpResultTableViewCell.Identifier, for: indexPath) as! YelpResultTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: BusinessResultTableViewCell.Identifier, for: indexPath) as! BusinessResultTableViewCell
 
         // Configure the cell...
 

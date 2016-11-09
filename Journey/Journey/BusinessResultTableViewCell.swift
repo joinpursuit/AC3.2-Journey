@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YelpResultTableViewCell: UITableViewCell {
+class BusinessResultTableViewCell: UITableViewCell {
     
     @IBOutlet weak var businessCardView: UIView!
    
