@@ -12,6 +12,8 @@
 		1A752EFF1DD249C500A74B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752EFD1DD249C500A74B86 /* Main.storyboard */; };
 		1A752F011DD249C500A74B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F001DD249C500A74B86 /* Assets.xcassets */; };
 		1A752F041DD249C500A74B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */; };
+		1A752F0C1DD24E1E00A74B86 /* YelpResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752F0B1DD24E1E00A74B86 /* YelpResultTableViewCell.swift */; };
+		1A752F0F1DD26ED600A74B86 /* YelpResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752F0E1DD26ED600A74B86 /* YelpResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1A752F001DD249C500A74B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A752F031DD249C500A74B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A752F051DD249C500A74B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A752F0B1DD24E1E00A74B86 /* YelpResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpResultTableViewCell.swift; sourceTree = "<group>"; };
+		1A752F0E1DD26ED600A74B86 /* YelpResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpResultsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		1A752EF81DD249C500A74B86 /* Journey */ = {
 			isa = PBXGroup;
 			children = (
+				1A752F0D1DD24E2600A74B86 /* View Controllers */,
 				1A752EF91DD249C500A74B86 /* AppDelegate.swift */,
 				1A752EFB1DD249C500A74B86 /* ViewController.swift */,
 				1A752EFD1DD249C500A74B86 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				1A752F051DD249C500A74B86 /* Info.plist */,
 			);
 			path = Journey;
+			sourceTree = "<group>";
+		};
+		1A752F0D1DD24E2600A74B86 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A752F0B1DD24E1E00A74B86 /* YelpResultTableViewCell.swift */,
+				1A752F0E1DD26ED600A74B86 /* YelpResultsTableViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A752EFC1DD249C500A74B86 /* ViewController.swift in Sources */,
+				1A752F0C1DD24E1E00A74B86 /* YelpResultTableViewCell.swift in Sources */,
+				1A752F0F1DD26ED600A74B86 /* YelpResultsTableViewController.swift in Sources */,
 				1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
