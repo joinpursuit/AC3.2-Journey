@@ -10,10 +10,12 @@ import UIKit
 
 class BusinessResultsTableViewController: UITableViewController {
 
-    var businessResults: [Business]!
+    var businessResults: [Business] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getSearchResults()
         
     }
 
@@ -28,7 +30,7 @@ class BusinessResultsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return businessResults.count
     }
 
     
@@ -36,6 +38,11 @@ class BusinessResultsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: BusinessResultTableViewCell.Identifier, for: indexPath) as! BusinessResultTableViewCell
 
         // Configure the cell...
+        let business = businessResults[indexPath.row]
+        
+        cell.businessNameLabel.text = business.name
+        cell.businessAddressLabel.text = business.phone
+        
 
         return cell
     }
@@ -47,6 +54,28 @@ class BusinessResultsTableViewController: UITableViewController {
         // Return false if you do not want the specified item to be editable.
         return true
     }
+    
+    
+    func getSearchResults(){
+        
+        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=91203&term=pizza&format=json&sort=distance&radius=5&listingcount=10&key=1fhn2vk8wv"
+        
+        ApiRequestManager.manager.getData(apiUrl: yellowPageEndPoint) { (data) in
+            guard let validData = data else { return }
+            // dump(validData)
+            
+            if let validBusiness = BusinessFactory.manager.getBusinessData(from: validData){
+                //dump(validBusiness)
+                self.businessResults = validBusiness
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+            }
+        }
+        
+    }
+    
     
 
     /*

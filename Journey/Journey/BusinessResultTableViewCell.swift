@@ -11,6 +11,8 @@ import UIKit
 class BusinessResultTableViewCell: UITableViewCell {
     
     @IBOutlet weak var businessCardView: UIView!
+    @IBOutlet weak var businessNameLabel: UILabel!
+    @IBOutlet weak var businessAddressLabel: UILabel!
    
     
     static let Identifier = "YelpResultIdentifier"

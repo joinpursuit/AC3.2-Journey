@@ -64,7 +64,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="businessAddressLabel" destination="Fx8-m3-RoT" id="Ul4-8D-osm"/>
                                     <outlet property="businessCardView" destination="T2W-k5-8Pn" id="WRL-ls-g2g"/>
+                                    <outlet property="businessNameLabel" destination="v7y-TP-wxl" id="TDs-Oa-fz6"/>
                                     <segue destination="15P-bb-Dkd" kind="show" id="huh-95-0tF"/>
                                 </connections>
                             </tableViewCell>
@@ -129,7 +131,6 @@
                     </view>
                     <connections>
                         <outlet property="businessDetailsView" destination="dcX-K6-YL4" id="ZGz-Cu-fsn"/>
-                        <outlet property="imagesCollectionView" destination="eww-Qt-JDt" id="mhP-RV-3gk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HED-l0-KTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
