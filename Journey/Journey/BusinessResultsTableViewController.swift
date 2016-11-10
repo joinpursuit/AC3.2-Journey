@@ -10,6 +10,8 @@ import UIKit
 
 class BusinessResultsTableViewController: UITableViewController {
 
+    var businessResults: [Business]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +20,7 @@ class BusinessResultsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

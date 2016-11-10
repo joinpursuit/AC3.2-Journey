@@ -65,6 +65,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="businessCardView" destination="T2W-k5-8Pn" id="WRL-ls-g2g"/>
+                                    <segue destination="15P-bb-Dkd" kind="show" id="huh-95-0tF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,6 +79,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKz-uG-NgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="-251.42428785607197"/>
+        </scene>
+        <!--Images View Controller-->
+        <scene sceneID="683-dm-fHb">
+            <objects>
+                <viewController id="15P-bb-Dkd" customClass="ImagesViewController" customModule="Journey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yq7-qu-N0d"/>
+                        <viewControllerLayoutGuide type="bottom" id="dOY-za-oiD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSR-tC-fqz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eww-Qt-JDt">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7ch-Vp-lXk">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4e6-zm-gxg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcX-K6-YL4" customClass="BusinessDetailCard" customModule="Journey" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eww-Qt-JDt" secondAttribute="trailing" id="3bL-jm-Jl8"/>
+                            <constraint firstItem="eww-Qt-JDt" firstAttribute="top" secondItem="Yq7-qu-N0d" secondAttribute="bottom" id="4uO-69-hbM"/>
+                            <constraint firstItem="dOY-za-oiD" firstAttribute="top" secondItem="dcX-K6-YL4" secondAttribute="bottom" constant="75" id="I45-mz-9cU"/>
+                            <constraint firstItem="dOY-za-oiD" firstAttribute="top" secondItem="eww-Qt-JDt" secondAttribute="bottom" id="QCz-Xt-h6W"/>
+                            <constraint firstItem="eww-Qt-JDt" firstAttribute="leading" secondItem="fSR-tC-fqz" secondAttribute="leading" id="VmA-P6-qAq"/>
+                            <constraint firstAttribute="trailing" secondItem="dcX-K6-YL4" secondAttribute="trailing" constant="20" id="gme-dt-tup"/>
+                            <constraint firstItem="dcX-K6-YL4" firstAttribute="leading" secondItem="fSR-tC-fqz" secondAttribute="leading" constant="20" id="gz7-oD-0Ch"/>
+                            <constraint firstItem="dcX-K6-YL4" firstAttribute="top" secondItem="fSR-tC-fqz" secondAttribute="top" constant="75" id="hu2-aM-i5v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="businessDetailsView" destination="dcX-K6-YL4" id="ZGz-Cu-fsn"/>
+                        <outlet property="imagesCollectionView" destination="eww-Qt-JDt" id="mhP-RV-3gk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HED-l0-KTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450" y="-251"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DbU-3q-Zzt">
