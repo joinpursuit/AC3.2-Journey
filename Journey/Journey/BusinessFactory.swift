@@ -47,20 +47,7 @@ class BusinessFactory {
         return business
     }
     
-    // MARK: - Method
-    static func getBusinessResult() {
-
-        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=91203&term=pizza&format=json&sort=distance&radius=5&listingcount=10&key=1fhn2vk8wv"
-        
-        ApiRequestManager.manager.getData(apiUrl: yellowPageEndPoint) { (data) in
-            guard let validData = data else { return }
-            dump(validData)
-            
-            if let validBusiness = self.manager.getBusinessData(from: validData){
-                dump(validBusiness)
-            }
-        }
-    }
+    
 }
 
 

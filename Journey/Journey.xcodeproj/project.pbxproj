@@ -14,11 +14,13 @@
 		1A752F011DD249C500A74B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F001DD249C500A74B86 /* Assets.xcassets */; };
 		1A752F041DD249C500A74B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */; };
 		1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */; };
+		1A7D31551DD3DFC200753B78 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D31541DD3DFC200753B78 /* AccessTokenManager.swift */; };
+		1A7D31571DD3E4BC00753B78 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */; };
+		1A7D315B1DD3E7DF00753B78 /* BusinessDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */; };
 		1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA03811DD388A20098F168 /* BusinessFactory.swift */; };
 		70A977CA1DD3B17D006ED913 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2392A1DD28C28004BCA1E /* Instagram.swift */; };
 		9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */; };
-		9C86AA521DD3E8C1002FB966 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86AA511DD3E8C1002FB966 /* AccessTokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +33,12 @@
 		1A752F031DD249C500A74B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A752F051DD249C500A74B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultsTableViewController.swift; sourceTree = "<group>"; };
+		1A7D31541DD3DFC200753B78 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenManager.swift; path = Journey/AccessTokenManager.swift; sourceTree = "<group>"; };
+		1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailCard.swift; sourceTree = "<group>"; };
 		1AEA03811DD388A20098F168 /* BusinessFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusinessFactory.swift; path = Journey/BusinessFactory.swift; sourceTree = "<group>"; };
 		70C2392A1DD28C28004BCA1E /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultTableViewCell.swift; sourceTree = "<group>"; };
-		9C86AA511DD3E8C1002FB966 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenManager.swift; path = Journey/AccessTokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		1A5AC2261DD3B51A00A187A3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1A7D31541DD3DFC200753B78 /* AccessTokenManager.swift */,
 				1A5AC21F1DD3B50200A187A3 /* ApiRequestManager.swift */,
 			);
 			name = Managers;
@@ -69,7 +74,6 @@
 		1A752EED1DD249C500A74B86 = {
 			isa = PBXGroup;
 			children = (
-				9C86AA511DD3E8C1002FB966 /* AccessTokenManager.swift */,
 				1A752EF81DD249C500A74B86 /* Journey */,
 				1A752EF71DD249C500A74B86 /* Products */,
 			);
@@ -102,6 +106,8 @@
 		1A752F0D1DD24E2600A74B86 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */,
+				1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */,
 				1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */,
 				9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */,
 			);
@@ -190,12 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C86AA521DD3E8C1002FB966 /* AccessTokenManager.swift in Sources */,
+				1A7D31571DD3E4BC00753B78 /* ImagesViewController.swift in Sources */,
+				1A7D31551DD3DFC200753B78 /* AccessTokenManager.swift in Sources */,
 				1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */,
 				9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */,
 				70A977CA1DD3B17D006ED913 /* (null) in Sources */,
 				1A5AC2241DD3B50200A187A3 /* Business.swift in Sources */,
 				1A5AC2221DD3B50200A187A3 /* ApiRequestManager.swift in Sources */,
+				1A7D315B1DD3E7DF00753B78 /* BusinessDetailCard.swift in Sources */,
 				1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */,
 				1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */,
 				70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */,
