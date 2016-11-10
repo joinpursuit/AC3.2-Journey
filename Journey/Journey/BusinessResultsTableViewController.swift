@@ -13,6 +13,7 @@ class BusinessResultsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        BusinessFactory.getBusinessResult()
     }
 
 
