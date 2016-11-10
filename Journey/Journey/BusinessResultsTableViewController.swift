@@ -17,6 +17,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         super.viewDidLoad()
         
         createSearchBar()
+        
        // getSearchResults()
         
     }
