@@ -35,9 +35,13 @@ class BusinessFactory {
                     let longitude = businessObject["longitude"] as? Float,
                     let phone = businessObject["phone"] as? String,
                     let hours = businessObject["openHours"] as? String,
-                    let slogan = businessObject["slogan"] as? String else { return  nil }
+                    let slogan = businessObject["slogan"] as? String,
+                    let street = businessObject["street"] as? String,
+                    let city = businessObject["city"] as? String,
+                    let state = businessObject["state"] as? String,
+                    let zipcode = businessObject["zip"] as? Int else { return  nil }
                 
-                business.append(Business(name: businessName, rating: rating, category: category, latitude: latitude, longitude: longitude, phone: phone, hours: hours, slogan: slogan))
+                business.append(Business(name: businessName, rating: rating, category: category, latitude: latitude, longitude: longitude, phone: phone, hours: hours, slogan: slogan, street: street, city: city, state: state, zipcode: zipcode))
                 
                 dump(business)
             }

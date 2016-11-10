@@ -17,8 +17,12 @@ class Business {
     let phone: String
     let hours: String
     let slogan: String
+    let street: String
+    let city: String
+    let state: String
+    let zipcode: Int
     
-    init(name: String, rating: Double, category: String, latitude: Float, longitude: Float, phone: String, hours: String, slogan: String) {
+    init(name: String, rating: Double, category: String, latitude: Float, longitude: Float, phone: String, hours: String, slogan: String, street: String, city: String, state: String, zipcode: Int) {
         self.name = name
         self.rating = rating
         self.category = category
@@ -27,5 +31,9 @@ class Business {
         self.phone = phone
         self.hours = hours
         self.slogan = slogan
+        self.street = street
+        self.city = city
+        self.state = state
+        self.zipcode = zipcode
     }
 }
