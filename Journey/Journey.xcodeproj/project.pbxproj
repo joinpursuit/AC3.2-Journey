@@ -18,6 +18,7 @@
 		1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */; };
 		70A977CA1DD3B17D006ED913 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977C91DD3B17D006ED913 /* AccessTokenManager.swift */; };
 		70A977D01DD3C42D006ED913 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977CF1DD3C42D006ED913 /* AccessTokenManager.swift */; };
+		70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977D51DD40196006ED913 /* Instagram Factory.swift */; };
 		70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2392A1DD28C28004BCA1E /* Instagram.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultsTableViewController.swift; sourceTree = "<group>"; };
 		70A977C91DD3B17D006ED913 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		70A977CF1DD3C42D006ED913 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenManager.swift; path = Journey/AccessTokenManager.swift; sourceTree = "<group>"; };
+		70A977D51DD40196006ED913 /* Instagram Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instagram Factory.swift"; sourceTree = "<group>"; };
 		70C2392A1DD28C28004BCA1E /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5AC2201DD3B50200A187A3 /* Business Factory.swift */,
+				70A977D51DD40196006ED913 /* Instagram Factory.swift */,
 			);
 			name = Factory;
 			path = ..;
@@ -198,6 +201,7 @@
 				1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */,
 				70A977D01DD3C42D006ED913 /* AccessTokenManager.swift in Sources */,
 				1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */,
+				70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */,
 				70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
