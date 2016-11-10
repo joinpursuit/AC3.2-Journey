@@ -31,9 +31,11 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath)
+     
         
         
-        
+        return cell
     }
 
     /*
