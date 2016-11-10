@@ -10,21 +10,30 @@ import Foundation
 
 class Business {
     let name: String
-    let longitude: Float
+    let rating: Double
+    let category: String
     let latitude: Float
-    let category: [String]
-    let address: [String]
-    let starRatingImage: String
-    let imageURL: String
+    let longitude: Float
+    let phone: String
+    let hours: String
+    let slogan: String
+    let street: String
+    let city: String
+    let state: String
+    let zipcode: Int
     
-    init(name: String, longitude: Float, latitude: Float, category: [String], address: [String], starRatingImage: String, imageURL: String) {
+    init(name: String, rating: Double, category: String, latitude: Float, longitude: Float, phone: String, hours: String, slogan: String, street: String, city: String, state: String, zipcode: Int) {
         self.name = name
-        self.longitude = longitude
-        self.latitude = latitude
+        self.rating = rating
         self.category = category
-        self.address = address
-        self.starRatingImage = starRatingImage
-        self.imageURL = imageURL
+        self.latitude = latitude
+        self.longitude = longitude
+        self.phone = phone
+        self.hours = hours
+        self.slogan = slogan
+        self.street = street
+        self.city = city
+        self.state = state
+        self.zipcode = zipcode
     }
 }
-
