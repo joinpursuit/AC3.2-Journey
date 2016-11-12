@@ -5,21 +5,21 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "42E3A2AD68BDC9299992F6A2AF75E63D4E3F0E31" : 9223372036854775807,
-    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807
+    "34C99EC4657D730267A707C2FE7D9CC7F83D83B6" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "038F62AC-6E50-4CBC-ADBC-9B51F346D119",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E66A272-7BA9-4071-BCDF-90E0CD376371",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "42E3A2AD68BDC9299992F6A2AF75E63D4E3F0E31" : "AC3.2-Journey\/",
-    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : ""
+    "34C99EC4657D730267A707C2FE7D9CC7F83D83B6" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Journey",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Journey\/Journey.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amtung\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/defintuition\/Battleship.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "34C99EC4657D730267A707C2FE7D9CC7F83D83B6"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/C4Q\/AC3.2-Journey.git",
