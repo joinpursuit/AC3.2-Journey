@@ -9,6 +9,9 @@
 import UIKit
 
 class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    var buiness: Business!
+    
+    
     @IBOutlet weak var businessDetailsView: UIView!
     
     
