@@ -43,7 +43,7 @@ class BusinessFactory {
                 
                 business.append(Business(name: businessName, rating: rating, category: category, latitude: latitude, longitude: longitude, phone: phone, hours: hours, slogan: slogan, street: street, city: city, state: state, zipcode: zipcode))
                 
-                dump(business)
+               // dump(business)
             }
         } catch {
             print("Unknown parsing error encountered: \(error)")

@@ -15,6 +15,12 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     let searchBar = UISearchBar()
     let locationManger = CLLocationManager()
     
+    var postalCode : String = ""{
+        didSet{
+            print("Zip code is \(self.postalCode)")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,9 +34,9 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         self.locationManger.startUpdatingLocation()
         
         
-       // createSearchBar()
+        createSearchBar()
         
-         getSearchResults()
+        
         
     }
     
@@ -63,24 +69,49 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     }
     
     
+     //MARK:- Location Delegate
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        guard let location = manager.location else { return }
+        CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
+            
+            if error != nil {
+                print("Location Error ===> \n \(error?.localizedDescription)")
+            }
+            
+            if placemark!.count > 0 {
+                let placemark = placemark![0]
+                self.locationManger.stopUpdatingLocation()
+                self.postalCode = placemark.postalCode!
+            }
+            
+            
+            DispatchQueue.main.async {
+                self.getSearchResults(near: self.postalCode)
+                self.tableView.reloadData()
+                
+            }
+        }
+    }
     
     
     //MARK:- Search delegates
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        getSearchResults(for: searchBar.text!)
+        getSearchResults(for: searchBar.text!, near: postalCode)
     }
     
-    
-    //MARK:- Location Delegate
     
     
     //MARK:- Utitilies
     
     //gets the search result for a specific term
-    func getSearchResults(for searchterm:String = "pizza"){
+    func getSearchResults(for searchterm:String = "pizza", near zipCode:String){
         
-        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=10467&term=\(searchterm)&format=json&sort=distance&radius=5&listingcount=15&key=1fhn2vk8wv"
+        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=\(zipCode)&term=\(searchterm)&format=json&sort=distance&radius=5&listingcount=15&key=1fhn2vk8wv"
+        print(yellowPageEndPoint)
         
         ApiRequestManager.manager.getData(apiUrl: yellowPageEndPoint) { (data) in
             guard let validData = data else { return }
@@ -107,7 +138,6 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
         //self.tableView.tableHeaderView = searchBar
-        
         
     }
     

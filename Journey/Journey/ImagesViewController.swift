@@ -8,8 +8,10 @@
 
 import UIKit
 
+
 class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     var buiness: Business!
+    var instagrams: [Instagram]!
     
     
     @IBOutlet weak var businessDetailsView: UIView!
@@ -17,12 +19,12 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        
+        
         
         
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 1
@@ -35,20 +37,30 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath)
-     
+        
         
         
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    func handleNotification(notification: Notification) {
+        
+        if let accessToken = AccessTokenManager.sharedInstance.accessToken {
+            let iGLocationAPIString: String = "https://api.instagram.com/v1/media/search?lat=\(self.buiness.latitude)&lng=\(self.buiness.longitude)&access_token=\(accessToken)"
+            print(iGLocationAPIString)
+            
+            //            if let apiUrl: URL = URL(string: iGLocationAPIString){
+            //                print(apiUrl)
+            ApiRequestManager.manager.getData(apiUrl: iGLocationAPIString, callback: { (data) in
+                guard let validData = data else {
+                    print("apiRequest for location data was unsuccessful")
+                    return
+                }
+                self.instagrams = InstagramFactory.manager.getInstagramData(from: validData)!
+            })
+        }
     }
-    */
-
+    
 }
