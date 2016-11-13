@@ -12,13 +12,9 @@ import Foundation
 class Instagram {
     
     var imageUrlString: String
-    var longitude: Float
-    var latitude: Float
     
-    init(imageUrlString: String, longitude: Float, latitude: Float) {
+    init(imageUrlString: String) {
         self.imageUrlString = imageUrlString
-        self.longitude = longitude
-        self.latitude = latitude
     }
 
 }
