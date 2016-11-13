@@ -14,14 +14,14 @@
 		1A752F011DD249C500A74B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F001DD249C500A74B86 /* Assets.xcassets */; };
 		1A752F041DD249C500A74B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */; };
 		1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */; };
-		70A977CA1DD3B17D006ED913 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977C91DD3B17D006ED913 /* AccessTokenManager.swift */; };
-		70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977D51DD40196006ED913 /* Instagram Factory.swift */; };
 		1A7D31571DD3E4BC00753B78 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */; };
 		1A7D315B1DD3E7DF00753B78 /* BusinessDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */; };
 		1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA03811DD388A20098F168 /* BusinessFactory.swift */; };
 		70A977CA1DD3B17D006ED913 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977D51DD40196006ED913 /* Instagram Factory.swift */; };
 		70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2392A1DD28C28004BCA1E /* Instagram.swift */; };
 		9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */; };
+		9C6500271DD928AD00964C8B /* JourneyLaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C6500261DD928AD00964C8B /* JourneyLaunchScreen.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +33,15 @@
 		1A752F001DD249C500A74B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A752F031DD249C500A74B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A752F051DD249C500A74B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultsTableViewController.swift; sourceTree = "<group>"; };		
-		70A977D51DD40196006ED913 /* Instagram Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instagram Factory.swift"; sourceTree = "<group>"; };
+		1A752F0E1DD26ED600A74B86 /* BusinessResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultsTableViewController.swift; sourceTree = "<group>"; };
 		1A7D31541DD3DFC200753B78 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenManager.swift; path = Journey/AccessTokenManager.swift; sourceTree = "<group>"; };
 		1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailCard.swift; sourceTree = "<group>"; };
 		1AEA03811DD388A20098F168 /* BusinessFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusinessFactory.swift; path = Journey/BusinessFactory.swift; sourceTree = "<group>"; };
+		70A977D51DD40196006ED913 /* Instagram Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instagram Factory.swift"; sourceTree = "<group>"; };
 		70C2392A1DD28C28004BCA1E /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultTableViewCell.swift; sourceTree = "<group>"; };
+		9C6500261DD928AD00964C8B /* JourneyLaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JourneyLaunchScreen.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 				1A752EFD1DD249C500A74B86 /* Main.storyboard */,
 				1A752F001DD249C500A74B86 /* Assets.xcassets */,
 				1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */,
+				9C6500261DD928AD00964C8B /* JourneyLaunchScreen.jpg */,
 				1A752F051DD249C500A74B86 /* Info.plist */,
 			);
 			path = Journey;
@@ -187,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A752F041DD249C500A74B86 /* LaunchScreen.storyboard in Resources */,
+				9C6500271DD928AD00964C8B /* JourneyLaunchScreen.jpg in Resources */,
 				1A752F011DD249C500A74B86 /* Assets.xcassets in Resources */,
 				1A752EFF1DD249C500A74B86 /* Main.storyboard in Resources */,
 			);
@@ -200,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7D31571DD3E4BC00753B78 /* ImagesViewController.swift in Sources */,
-				1A7D31551DD3DFC200753B78 /* AccessTokenManager.swift in Sources */,
 				1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */,
 				9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */,
 				70A977CA1DD3B17D006ED913 /* (null) in Sources */,
