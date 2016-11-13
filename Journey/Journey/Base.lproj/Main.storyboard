@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X3N-va-CjE" id="yOk-3x-fa1">
-                                    <frame key="frameInset" width="375" height="200"/>
+                                    <frame key="frameInset" width="375" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-k5-8Pn" userLabel="Business Card View">
@@ -67,7 +67,7 @@
                                     <outlet property="businessAddressLabel" destination="Fx8-m3-RoT" id="Ul4-8D-osm"/>
                                     <outlet property="businessCardView" destination="T2W-k5-8Pn" id="WRL-ls-g2g"/>
                                     <outlet property="businessNameLabel" destination="v7y-TP-wxl" id="TDs-Oa-fz6"/>
-                                    <segue destination="15P-bb-Dkd" kind="show" id="huh-95-0tF"/>
+                                    <segue destination="15P-bb-Dkd" kind="show" identifier="showPictureResults" id="huh-95-0tF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,7 +76,9 @@
                             <outlet property="delegate" destination="JgY-Mh-ViW" id="GRN-r4-0n7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="psi-ap-gTA"/>
+                    <navigationItem key="navigationItem" id="psi-ap-gTA">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="search" id="oMP-Jd-CTh"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKz-uG-NgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
