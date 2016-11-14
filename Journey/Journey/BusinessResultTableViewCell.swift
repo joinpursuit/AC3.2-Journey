@@ -10,6 +10,8 @@ import UIKit
 
 class BusinessResultTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var hoursLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var cuisineLabel: UILabel!
     @IBOutlet weak var businessCardView: UIView!
     @IBOutlet weak var businessNameLabel: UILabel!
