@@ -1,5 +1,7 @@
 # Project: Journey
 
+https://s13.postimg.org/jwg74n41j/journey.jpg
+
 ## Amber's Contribution
 ### Notification Center
 
