@@ -1,6 +1,6 @@
-# AC3.2-Journey
+# Project: Journey
 
-Amber's Contribution
+## Amber's Contribution
 
 I was responsible for creating an Instagram Factory that would parse instagram data. In order to run an API call based on the businesses location, I needed to first 
 receive an access token for the Instagram User, which would then be used for any further Instagram Api calls. I needed to find a way of passing the access token data from the app delegate(where it was created)
@@ -34,4 +34,25 @@ example:
     }
     Within that function you will want to perform any code that is dependent on the data that has now been passed to the VC.
     
+## Annie
+
+During our group project, I learned about Core Location. This framework determines the current latitude and longitude of a device. It uses the available hardware to determine the user’s position and heading. Apps use location data for a variety of purposes ranging from turn by turn navigation to finding local business services, the location data is retrieved through the classes of this framework.
+
+Then we use the classes and protocols in this framework to configure and schedule the delivery of location and heading events. Core Location conforms to a CLLocationManagerDelegate protocol, it defines the methods used to receive location and sends the location data back to the delegate CLLocationManager object. We can also use it to define geographic regions and monitor when the user crosses the boundaries of those regions. In iOS, we can define a region around Bluetooth low-energy beacon regions.
+
+Standard location service: (In this case, we want to load user’s initial location at app launch to display nearby businesses)
+
+In the info.plist you will have to add NSLocationAlwaysUsageDescription and a custom alert message like, ex App needs location service.
+
+import CoreLocation
+
+//Conforms to delegate method
+        self.locationManger.delegate = self
+ //Gets user most accurate location
+        self.locationManger.desiredAccuracy = kCLLocationAccuracyBest
+//Only use location services when app is in the foreground
+        self.locationManger.requestWhenInUseAuthorization()
+//Starts looking for location
+        self.locationManger.startUpdatingLocation()
+
 
