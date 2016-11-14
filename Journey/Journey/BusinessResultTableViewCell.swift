@@ -10,9 +10,11 @@ import UIKit
 
 class BusinessResultTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var cuisineLabel: UILabel!
     @IBOutlet weak var businessCardView: UIView!
     @IBOutlet weak var businessNameLabel: UILabel!
     @IBOutlet weak var businessAddressLabel: UILabel!
+    @IBOutlet weak var starRatingImage: UIImageView!
    
     
     static let Identifier = "YelpResultIdentifier"
