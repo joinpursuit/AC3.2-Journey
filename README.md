@@ -49,15 +49,19 @@ In the info.plist you will have to add NSLocationAlwaysUsageDescription and a cu
 import CoreLocation
 
 //Conforms to delegate method
+
         self.locationManger.delegate = self
         
  //Gets user most accurate location
+ 
         self.locationManger.desiredAccuracy = kCLLocationAccuracyBest
         
 //Only use location services when app is in the foreground
+
         self.locationManger.requestWhenInUseAuthorization()
         
 //Starts looking for location
+
         self.locationManger.startUpdatingLocation()
 
 
