@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vA7-Yu-6vH">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vA7-Yu-6vH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -26,26 +26,32 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-k5-8Pn" userLabel="Business Card View">
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7y-TP-wxl">
-                                                    <color key="backgroundColor" red="0.77272366751269039" green="0.089208186060714581" blue="0.0021941328011777527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="28"/>
+                                                    <color key="backgroundColor" red="0.58084374999999999" green="0.010319399885969699" blue="0.054513546204586802" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx8-m3-RoT">
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-JX-Sde" userLabel="Cuisine Category Label">
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-JX-Sde" userLabel="Cuisine Category Label">
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qeR-hq-CfR" userLabel="Stars Image View"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qeR-hq-CfR" userLabel="Stars Image View">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="DU7-T6-Qbm"/>
+                                                        <constraint firstAttribute="width" constant="150" id="dhW-TX-Hu6"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="UJh-JX-Sde" secondAttribute="trailing" id="3Qu-nU-XLE"/>
+                                                <constraint firstItem="qeR-hq-CfR" firstAttribute="centerX" secondItem="T2W-k5-8Pn" secondAttribute="centerX" id="756-YO-LyB"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="v7y-TP-wxl" secondAttribute="trailing" id="LyB-5W-8Pp"/>
                                                 <constraint firstItem="Fx8-m3-RoT" firstAttribute="top" secondItem="UJh-JX-Sde" secondAttribute="bottom" constant="10" id="Mfa-lQ-Rdb"/>
                                                 <constraint firstItem="UJh-JX-Sde" firstAttribute="top" secondItem="v7y-TP-wxl" secondAttribute="bottom" constant="15" id="WQI-X5-BDJ"/>
@@ -54,10 +60,7 @@
                                                 <constraint firstItem="qeR-hq-CfR" firstAttribute="top" secondItem="Fx8-m3-RoT" secondAttribute="bottom" constant="15" id="gAZ-gj-9Q7"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fx8-m3-RoT" secondAttribute="trailing" id="gzZ-Dc-MgD"/>
                                                 <constraint firstItem="UJh-JX-Sde" firstAttribute="leading" secondItem="T2W-k5-8Pn" secondAttribute="leading" id="lwE-4w-PHb"/>
-                                                <constraint firstAttribute="trailing" secondItem="qeR-hq-CfR" secondAttribute="trailing" id="oI0-Yk-OGF"/>
                                                 <constraint firstItem="v7y-TP-wxl" firstAttribute="leading" secondItem="T2W-k5-8Pn" secondAttribute="leadingMargin" id="qRo-hQ-rpa"/>
-                                                <constraint firstAttribute="bottom" secondItem="qeR-hq-CfR" secondAttribute="bottom" constant="34" id="r6V-qv-0zS"/>
-                                                <constraint firstItem="qeR-hq-CfR" firstAttribute="leading" secondItem="T2W-k5-8Pn" secondAttribute="leading" id="san-oL-bjk"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -167,7 +170,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vA7-Yu-6vH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FPE-6K-Xah">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FPE-6K-Xah">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
