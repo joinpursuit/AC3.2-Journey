@@ -60,8 +60,25 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         
         // Configure the cell...
         let business = businessResults[indexPath.row]
-        
+        cell.cuisineLabel.text = business.category
         cell.businessNameLabel.text = business.name
+        
+        let rating = Int(business.rating)
+        switch rating{
+        case 1:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "1star")
+        case 2:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "2stars")
+        case 3:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "3stars")
+        case 4:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "4stars")
+        case 5:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "5stars")
+        default:
+            cell.starRatingImage.image = #imageLiteral(resourceName: "1star")
+        }
+        
         cell.businessAddressLabel.text = "\(business.street), \(business.city),\(business.zipcode)"
         
         
@@ -110,7 +127,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     //gets the search result for a specific term
     func getSearchResults(for searchterm:String = "pizza", near zipCode:String){
         
-        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=\(zipCode)&term=\(searchterm)&format=json&sort=distance&radius=5&listingcount=15&key=1fhn2vk8wv"
+        let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=\(zipCode)&term=\(searchterm)&format=json&sort=distance&radius=5&listingcount=25&key=1fhn2vk8wv"
         print(yellowPageEndPoint)
         
         ApiRequestManager.manager.getData(apiUrl: yellowPageEndPoint) { (data) in
