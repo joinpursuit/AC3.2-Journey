@@ -62,5 +62,5 @@ import CoreLocation
 
         self.locationManger.startUpdatingLocation()
         
-I also created the logo and launch screen for our Journey project, hope you like it!
+I also created the logo, star images and launch screen for our Journey project, hope you like it! Overall, I enjoyed this group project, we not only learn from the experience of others, but everyone learns from seeing other people solution and also having fun at the same time. Sometimes I'd feel like I truly understood some concept - until I had a conversation with someone smarter. That conversation not only helps me realize how little I had understood, but would also leave me richer because of someone else's point of view. I think this is one of the benefits of a group project and group programming, looking forward to the next one! 
 
