@@ -38,11 +38,11 @@ example:
 ## Annie
 ### Core Location
 
-During our group project, I learned about Core Location. This framework determines the current latitude and longitude of a device. It uses the available hardware to determine the user’s position and heading. Apps use location data for a variety of purposes ranging from turn by turn navigation to finding local business services, the location data is retrieved through the classes of this framework.
+During our group project, I learned about Core Location. This framework determines the current latitude and longitude that is associated with the device. It uses the available hardware to determine the user’s position and heading. Apps use location data for a variety of purposes ranging from turn by turn navigation to finding local business services, location data is retrieved through the classes of this framework.
 
 Then we use the classes and protocols in this framework to configure and schedule the delivery of location and heading events. Core Location conforms to a CLLocationManagerDelegate protocol, it defines the methods used to receive location and sends the location data back to the delegate CLLocationManager object. We can also use it to define geographic regions and monitor when the user crosses the boundaries of those regions. In iOS, we can define a region around Bluetooth low-energy beacon regions.
 
-Standard location service: (In this case, we want to load user’s initial location at app launch to display nearby businesses) In the info.plist you will have to add NSLocationAlwaysUsageDescription and a custom alert message, ex App needs location service.
+We used a Standard location service: (In our project, we want to load user’s initial location at app launch to display nearby businesses) In the info.plist we added NSLocationAlwaysUsageDescription and a custom alert message, App needs location service, to ask for user's permission.
 
 import CoreLocation
 
