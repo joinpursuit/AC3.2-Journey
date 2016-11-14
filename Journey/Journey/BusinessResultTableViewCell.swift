@@ -23,10 +23,10 @@ class BusinessResultTableViewCell: UITableViewCell {
        // self.frame.height
         
         
-        
+        self.selectionStyle = .none
         businessCardView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0,1.0,1.0,1.0])
         businessCardView.layer.masksToBounds = false
-        businessCardView.layer.cornerRadius = 4.0
+        businessCardView.layer.cornerRadius = 10.0
         businessCardView.layer.shadowOffset = CGSize(width: 1, height: 1)
         businessCardView.layer.shadowOpacity = 0.2
         
