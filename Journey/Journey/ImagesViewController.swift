@@ -13,14 +13,13 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
     var buiness: Business!
     var instagrams: [Instagram]!
     
-    
     @IBOutlet weak var businessDetailsView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setUpBusinessDetailCard()
         
         
     }
@@ -61,6 +60,18 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
                 self.instagrams = InstagramFactory.manager.getInstagramData(from: validData)!
             })
         }
+    }
+    
+    
+    func setUpBusinessDetailCard(){
+        
+      //  businessDetailsView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0,1.0,1.0,1.0])
+        businessDetailsView.layer.masksToBounds = false
+        businessDetailsView.layer.cornerRadius = 10.0
+        businessDetailsView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        businessDetailsView.layer.shadowOpacity = 0.2
+
+
     }
     
 }

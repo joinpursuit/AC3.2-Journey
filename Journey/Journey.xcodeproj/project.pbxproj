@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A5808031DD8A4650017E650 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5808021DD8A4650017E650 /* SettingsManager.swift */; };
 		1A5808051DD8AF730017E650 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5808041DD8AF730017E650 /* AccessTokenManager.swift */; };
 		1A5808071DD8B8EC0017E650 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5808061DD8B8EC0017E650 /* SettingsViewController.swift */; };
+		1A58080A1DD92C350017E650 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5808081DD92C350017E650 /* SettingsManager.swift */; };
+		1A58080B1DD92C350017E650 /* Instagram Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5808091DD92C350017E650 /* Instagram Factory.swift */; };
 		1A5AC2221DD3B50200A187A3 /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AC21F1DD3B50200A187A3 /* ApiRequestManager.swift */; };
 		1A5AC2241DD3B50200A187A3 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AC2211DD3B50200A187A3 /* Business.swift */; };
 		1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752EF91DD249C500A74B86 /* AppDelegate.swift */; };
@@ -21,15 +22,15 @@
 		1A7D315B1DD3E7DF00753B78 /* BusinessDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */; };
 		1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEA03811DD388A20098F168 /* BusinessFactory.swift */; };
 		70A977CA1DD3B17D006ED913 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A977D51DD40196006ED913 /* Instagram Factory.swift */; };
 		70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2392A1DD28C28004BCA1E /* Instagram.swift */; };
 		9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A5808021DD8A4650017E650 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		1A5808041DD8AF730017E650 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenManager.swift; path = Journey/AccessTokenManager.swift; sourceTree = "<group>"; };
 		1A5808061DD8B8EC0017E650 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1A5808081DD92C350017E650 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = Journey/SettingsManager.swift; sourceTree = "<group>"; };
+		1A5808091DD92C350017E650 /* Instagram Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Instagram Factory.swift"; path = "Journey/Instagram Factory.swift"; sourceTree = "<group>"; };
 		1A5AC21F1DD3B50200A187A3 /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRequestManager.swift; path = Journey/ApiRequestManager.swift; sourceTree = "<group>"; };
 		1A5AC2211DD3B50200A187A3 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		1A752EF61DD249C500A74B86 /* Journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +43,6 @@
 		1A7D31561DD3E4BC00753B78 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		1A7D315A1DD3E7DF00753B78 /* BusinessDetailCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessDetailCard.swift; sourceTree = "<group>"; };
 		1AEA03811DD388A20098F168 /* BusinessFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusinessFactory.swift; path = Journey/BusinessFactory.swift; sourceTree = "<group>"; };
-		70A977D51DD40196006ED913 /* Instagram Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instagram Factory.swift"; sourceTree = "<group>"; };
 		70C2392A1DD28C28004BCA1E /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,7 @@
 		1A5AC2251DD3B50A00A187A3 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				70A977D51DD40196006ED913 /* Instagram Factory.swift */,
+				1A5808091DD92C350017E650 /* Instagram Factory.swift */,
 				1AEA03811DD388A20098F168 /* BusinessFactory.swift */,
 			);
 			name = Factory;
@@ -71,8 +71,8 @@
 		1A5AC2261DD3B51A00A187A3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1A5808081DD92C350017E650 /* SettingsManager.swift */,
 				1A5808041DD8AF730017E650 /* AccessTokenManager.swift */,
-				1A5808021DD8A4650017E650 /* SettingsManager.swift */,
 				1A5AC21F1DD3B50200A187A3 /* ApiRequestManager.swift */,
 			);
 			name = Managers;
@@ -204,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A58080B1DD92C350017E650 /* Instagram Factory.swift in Sources */,
 				1A7D31571DD3E4BC00753B78 /* ImagesViewController.swift in Sources */,
+				1A58080A1DD92C350017E650 /* SettingsManager.swift in Sources */,
 				1AEA03841DD388A20098F168 /* BusinessFactory.swift in Sources */,
 				9C32F9651DD3CA5A00959956 /* BusinessResultTableViewCell.swift in Sources */,
 				70A977CA1DD3B17D006ED913 /* (null) in Sources */,
@@ -212,11 +214,9 @@
 				1A5AC2221DD3B50200A187A3 /* ApiRequestManager.swift in Sources */,
 				1A7D315B1DD3E7DF00753B78 /* BusinessDetailCard.swift in Sources */,
 				1A752F0F1DD26ED600A74B86 /* BusinessResultsTableViewController.swift in Sources */,
-				1A5808031DD8A4650017E650 /* SettingsManager.swift in Sources */,
 				1A5808071DD8B8EC0017E650 /* SettingsViewController.swift in Sources */,
 				1A5808051DD8AF730017E650 /* AccessTokenManager.swift in Sources */,
 				1A752EFA1DD249C500A74B86 /* AppDelegate.swift in Sources */,
-				70A977D61DD40196006ED913 /* Instagram Factory.swift in Sources */,
 				70C2392B1DD28C28004BCA1E /* Instagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
