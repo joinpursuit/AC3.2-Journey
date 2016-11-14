@@ -42,9 +42,7 @@ During our group project, I learned about Core Location. This framework determin
 
 Then we use the classes and protocols in this framework to configure and schedule the delivery of location and heading events. Core Location conforms to a CLLocationManagerDelegate protocol, it defines the methods used to receive location and sends the location data back to the delegate CLLocationManager object. We can also use it to define geographic regions and monitor when the user crosses the boundaries of those regions. In iOS, we can define a region around Bluetooth low-energy beacon regions.
 
-Standard location service: (In this case, we want to load user’s initial location at app launch to display nearby businesses)
-
-In the info.plist you will have to add NSLocationAlwaysUsageDescription and a custom alert message like, ex App needs location service.
+Standard location service: (In this case, we want to load user’s initial location at app launch to display nearby businesses) In the info.plist you will have to add NSLocationAlwaysUsageDescription and a custom alert message, ex App needs location service.
 
 import CoreLocation
 
