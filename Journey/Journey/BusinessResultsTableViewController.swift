@@ -117,7 +117,9 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     //MARK:- Search delegates
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        getSearchResults(for: searchBar.text!, near: postalCode)
+        let searchTerm = searchBar.text?.replacingOccurrences(of: " ", with: "")
+        
+        getSearchResults(for: searchTerm!, near: postalCode)
     }
     
     

@@ -2,11 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
+<<<<<<< HEAD
       "filename" : "2stars.jpg",
+=======
+>>>>>>> d3f70620b61837921c8f0c09ae9de910ec685141
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+<<<<<<< HEAD
+=======
+      "filename" : "2stars.jpg",
+>>>>>>> d3f70620b61837921c8f0c09ae9de910ec685141
       "scale" : "2x"
     },
     {
