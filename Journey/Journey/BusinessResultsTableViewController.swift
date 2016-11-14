@@ -24,6 +24,8 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.8392, green: 0, blue: 0, alpha: 1.0)
+        
         //Conforms to delegate method
         self.locationManger.delegate = self
         //Gets user most accurate location
