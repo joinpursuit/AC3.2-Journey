@@ -45,6 +45,11 @@
 		1AEA03811DD388A20098F168 /* BusinessFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusinessFactory.swift; path = Journey/BusinessFactory.swift; sourceTree = "<group>"; };
 		70C2392A1DD28C28004BCA1E /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		9C32F9641DD3CA5A00959956 /* BusinessResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessResultTableViewCell.swift; sourceTree = "<group>"; };
+		9C65003D1DDA449100964C8B /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		9C6500401DDA449100964C8B /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		9C6500411DDA449100964C8B /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		9C6500441DDA449100964C8B /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
+		9C6500451DDA449100964C8B /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +108,9 @@
 				1A5AC2261DD3B51A00A187A3 /* Managers */,
 				1A5AC2251DD3B50A00A187A3 /* Factory */,
 				70C239281DD28999004BCA1E /* Models */,
-				1A752EFD1DD249C500A74B86 /* Main.storyboard */,
+				9C65003B1DDA447000964C8B /* Font */,
 				1A752F001DD249C500A74B86 /* Assets.xcassets */,
+				1A752EFD1DD249C500A74B86 /* Main.storyboard */,
 				1A752F021DD249C500A74B86 /* LaunchScreen.storyboard */,
 				1A752F051DD249C500A74B86 /* Info.plist */,
 			);
@@ -130,6 +136,18 @@
 				70C2392A1DD28C28004BCA1E /* Instagram.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9C65003B1DDA447000964C8B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9C65003D1DDA449100964C8B /* Montserrat-Bold.otf */,
+				9C6500411DDA449100964C8B /* Montserrat-Medium.otf */,
+				9C6500401DDA449100964C8B /* Montserrat-Light.otf */,
+				9C6500451DDA449100964C8B /* Montserrat-UltraLight.otf */,
+				9C6500441DDA449100964C8B /* Montserrat-Thin.otf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Journey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Journey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
