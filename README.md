@@ -61,5 +61,6 @@ import CoreLocation
 //Starts looking for location
 
         self.locationManger.startUpdatingLocation()
-
+        
+I also created the logo and launch screen for our Journey project, hope you like it!
 
