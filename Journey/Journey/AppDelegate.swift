@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        /*
+        
         
         let clientID = "3c1ba9eeaa4d45fa870a0748a63ab7e5"
         let redirectURL = "https://oauth-test-spacedrabbit.herokuapp.com/callback/InstagramTest"
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
  
-         */
+        
         
         return true
     }
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         print("in return")
         
-        /* Code for instgram oauth
+        // Code for instgram oauth
  
  
  
@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }).resume()
         
  
-    */
+
         return true
     }
     

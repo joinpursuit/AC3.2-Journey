@@ -77,10 +77,26 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="psi-ap-gTA">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="search" id="oMP-Jd-CTh"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="action" id="oMP-Jd-CTh"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKz-uG-NgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Kjj-h3-1Hy">
+                    <rect key="frame" x="0.0" y="0.0" width="313" height="164"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pef-HB-sno">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pef-HB-sno" firstAttribute="centerX" secondItem="Kjj-h3-1Hy" secondAttribute="centerX" id="9my-DX-uKy"/>
+                        <constraint firstItem="pef-HB-sno" firstAttribute="top" secondItem="Kjj-h3-1Hy" secondAttribute="top" constant="10" id="bgH-Q0-hTZ"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="604" y="-251.42428785607197"/>
         </scene>
@@ -126,9 +142,9 @@
                             <constraint firstItem="dOY-za-oiD" firstAttribute="top" secondItem="dcX-K6-YL4" secondAttribute="bottom" constant="75" id="I45-mz-9cU"/>
                             <constraint firstItem="dOY-za-oiD" firstAttribute="top" secondItem="eww-Qt-JDt" secondAttribute="bottom" id="QCz-Xt-h6W"/>
                             <constraint firstItem="eww-Qt-JDt" firstAttribute="leading" secondItem="fSR-tC-fqz" secondAttribute="leading" id="VmA-P6-qAq"/>
-                            <constraint firstAttribute="trailing" secondItem="dcX-K6-YL4" secondAttribute="trailing" constant="20" id="gme-dt-tup"/>
-                            <constraint firstItem="dcX-K6-YL4" firstAttribute="leading" secondItem="fSR-tC-fqz" secondAttribute="leading" constant="20" id="gz7-oD-0Ch"/>
-                            <constraint firstItem="dcX-K6-YL4" firstAttribute="top" secondItem="fSR-tC-fqz" secondAttribute="top" constant="75" id="hu2-aM-i5v"/>
+                            <constraint firstAttribute="trailing" secondItem="dcX-K6-YL4" secondAttribute="trailing" constant="25" id="gme-dt-tup"/>
+                            <constraint firstItem="dcX-K6-YL4" firstAttribute="leading" secondItem="fSR-tC-fqz" secondAttribute="leading" constant="25" id="gz7-oD-0Ch"/>
+                            <constraint firstItem="dcX-K6-YL4" firstAttribute="top" secondItem="fSR-tC-fqz" secondAttribute="top" constant="120" id="hu2-aM-i5v"/>
                         </constraints>
                     </view>
                     <connections>
