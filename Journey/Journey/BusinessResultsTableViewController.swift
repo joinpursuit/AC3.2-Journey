@@ -26,7 +26,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         
         //Conforms to delegate method
         self.locationManger.delegate = self
-        //Gets user mot accurate location
+        //Gets user most accurate location
         self.locationManger.desiredAccuracy = kCLLocationAccuracyBest
         //Only use location services when app is in the foreground
         self.locationManger.requestWhenInUseAuthorization()
