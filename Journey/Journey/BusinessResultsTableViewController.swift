@@ -14,6 +14,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     var businessResults: [Business] = []
     let searchBar = UISearchBar()
     let locationManger = CLLocationManager()
+    var searchTerm: String  = "pizza"
     
     var postalCode : String = ""{
         didSet{
@@ -36,6 +37,8 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         
         createSearchBar()
         
+        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh), for: UIControlEvents.valueChanged)
+
         
         
     }
@@ -106,7 +109,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
             
             
             DispatchQueue.main.async {
-                self.getSearchResults(near: self.postalCode)
+                self.getSearchResults(for: self.searchTerm, near: self.postalCode)
                 self.tableView.reloadData()
                 
             }
@@ -117,9 +120,9 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     //MARK:- Search delegates
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let searchTerm = searchBar.text?.replacingOccurrences(of: " ", with: "")
+        self.searchTerm = (searchBar.text?.replacingOccurrences(of: " ", with: ""))!
         
-        getSearchResults(for: searchTerm!, near: postalCode)
+        getSearchResults(for: searchTerm, near: postalCode)
     }
     
     
@@ -127,7 +130,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     //MARK:- Utitilies
     
     //gets the search result for a specific term
-    func getSearchResults(for searchterm:String = "pizza", near zipCode:String){
+    func getSearchResults(for searchterm:String, near zipCode:String){
         
         let yellowPageEndPoint = "http://pubapi.yp.com/search-api/search/devapi/search?searchloc=\(zipCode)&term=\(searchterm)&format=json&sort=distance&radius=5&listingcount=25&key=1fhn2vk8wv"
         print(yellowPageEndPoint)
@@ -138,10 +141,12 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
             
             if let validBusiness = BusinessFactory.manager.getBusinessData(from: validData){
                 //dump(validBusiness)
-                self.businessResults = validBusiness
+                self.businessResults = validBusiness.sorted{$0.rating > $1.rating}
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.refreshControl?.endRefreshing()
                 }
+                
                 
             }
         }
@@ -160,6 +165,12 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         
     }
     
+    func handleRefresh(){
+        self.locationManger.startUpdatingLocation()
+        getSearchResults(for: searchTerm, near: postalCode)
+    }
+    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let instaVC = segue.destination as? ImagesViewController{
