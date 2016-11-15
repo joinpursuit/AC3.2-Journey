@@ -67,6 +67,8 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
         let business = businessResults[indexPath.row]
         cell.cuisineLabel.text = business.category
         cell.businessNameLabel.text = business.name
+        cell.phoneNumberLabel.text = business.phone
+        cell.hoursLabel.text = business.hours
         
         let rating = Int(business.rating)
         switch rating{
@@ -160,7 +162,7 @@ class BusinessResultsTableViewController: UITableViewController, UISearchBarDele
     //Adds searchbar to navigation controller
     func createSearchBar(){
         searchBar.showsCancelButton = false
-        searchBar.placeholder = "Business..."
+        searchBar.placeholder = "Where do you want to start your journey?"
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
         //self.tableView.tableHeaderView = searchBar
