@@ -86,6 +86,28 @@
                                                 <constraint firstItem="AZQ-QJ-J07" firstAttribute="top" secondItem="Fx8-m3-RoT" secondAttribute="bottom" constant="5" id="v2E-oa-WZn"/>
                                             </constraints>
                                         </view>
+                                        <visualEffectView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brO-vH-cvF">
+                                            <frame key="frameInset" width="375" height="214"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="26Q-ia-cHB">
+                                                <frame key="frameInset"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5v-DW-GSV">
+                                                        <frame key="frameInset"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="6zs-eC-UzH">
+                                                            <frame key="frameInset"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </view>
+                                                        <vibrancyEffect>
+                                                            <blurEffect style="light"/>
+                                                        </vibrancyEffect>
+                                                    </visualEffectView>
+                                                </subviews>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="T2W-k5-8Pn" firstAttribute="leading" secondItem="yOk-3x-fa1" secondAttribute="leading" constant="20" id="D10-n3-M17"/>
@@ -138,22 +160,6 @@
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="1Yn-4s-Hg0" secondAttribute="bottom" constant="15" id="J0A-RT-BVw"/>
                         <constraint firstItem="1Yn-4s-Hg0" firstAttribute="centerX" secondItem="9HP-ma-FyC" secondAttribute="centerX" id="h4k-Th-bF4"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" id="Kjj-h3-1Hy">
-                    <rect key="frame" x="0.0" y="0.0" width="313" height="164"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pef-HB-sno">
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="pef-HB-sno" firstAttribute="centerX" secondItem="Kjj-h3-1Hy" secondAttribute="centerX" id="9my-DX-uKy"/>
-                        <constraint firstItem="pef-HB-sno" firstAttribute="top" secondItem="Kjj-h3-1Hy" secondAttribute="top" constant="10" id="bgH-Q0-hTZ"/>
                     </constraints>
                 </view>
             </objects>
@@ -219,7 +225,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vA7-Yu-6vH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FPE-6K-Xah">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FPE-6K-Xah">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
