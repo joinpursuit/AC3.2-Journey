@@ -2,16 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Montserrat-Bold.otf</string>
-		<string>Montserrat-Medium.otf</string>
-		<string>Montserrat-Light.otf</string>
-		<string>Montserrat-UltraLight.otf</string>
-		<string>Montserrat-Thin.otf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Journey</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -50,6 +44,14 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>App needs location service</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-Bold.otf</string>
+		<string>Montserrat-Medium.otf</string>
+		<string>Montserrat-Light.otf</string>
+		<string>Montserrat-UltraLight.otf</string>
+		<string>Montserrat-Thin.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
