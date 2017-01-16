@@ -21,6 +21,9 @@ class Business {
     let city: String
     let state: String
     let zipcode: Int
+    var location: String {
+        return "\(street), \(city), \(state) \(zipcode)"
+    }
     
     init(name: String, rating: Double, category: String, latitude: Float, longitude: Float, phone: String, hours: String, slogan: String, street: String, city: String, state: String, zipcode: Int) {
         self.name = name
@@ -35,5 +38,8 @@ class Business {
         self.city = city
         self.state = state
         self.zipcode = zipcode
+    
+//        let location = "\(street), \(city), \(state) \(zipcode)"
+//        self.location = location
     }
 }
