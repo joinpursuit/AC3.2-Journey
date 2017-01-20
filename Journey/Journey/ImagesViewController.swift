@@ -9,21 +9,18 @@
 import UIKit
 
 
-class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ImagesViewController: UIViewController {
     var buiness: Business!
-    var instagrams: [Instagram]!
-    
-    @IBOutlet weak var businessDetailsView: UIView!
-    
-    
+//    var instagrams: [Instagram]!
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpBusinessDetailCard()
+       // setUpBusinessDetailCard()
         
         
     }
-    
+    /*
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return 1
@@ -41,7 +38,7 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         return cell
     }
-    
+ 
     
     
     func handleNotification(notification: Notification) {
@@ -73,5 +70,5 @@ class ImagesViewController: UIViewController, UICollectionViewDelegate, UICollec
 
 
     }
-    
+    */
 }

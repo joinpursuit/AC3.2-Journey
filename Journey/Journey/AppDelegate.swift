@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
+      /*
+
+ 
         let clientID = "3c1ba9eeaa4d45fa870a0748a63ab7e5"
         let redirectURL = "https://oauth-test-spacedrabbit.herokuapp.com/callback/InstagramTest"
         // https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
@@ -26,8 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.open(url, options: [:]) { (success: Bool) in
             
         }
- 
         
+        
+        */
         
         return true
     }
@@ -37,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Code for instgram oauth
  
- 
+
+        /*
  
         var accessCode: String = ""
         let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
@@ -112,8 +115,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
         }).resume()
-        
+
  
+        */
 
         return true
     }
